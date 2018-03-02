@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Comic Sans Might Just be the Best Font for People With Dyslexia</title>
+	<!-- This sets the initial view for mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style type="text/css" media="screen">
+	    html {
+		    /* Make iOS not resize on device rotation */
+		    -ms-text-size-adjust: 100%; 
+		    -webkit-text-size-adjust: 100%;
+
+		    /* NOTE
+		    html is set to 62.5% so that all the REM measurements throughout Skeleton
+		    are based on 10px sizing. So basically 1.5rem = 15px  
+		      
+		    Change this if you want to base your REM measuements on something other 
+		    than 10px as the base
+		    */
+		    font-size: 62.5%; 
+	    }
+
+	    body {
+	    	padding-top: 40px;
+	    	padding-bottom: 40px;
+	    	font-family: Raleway;
+		    font-size: 1.7em; /* currently ems cause chrome bug misinterpreting rems on body element */
+		    line-height: 1.5em;
+			font-weight: 500;
+		    margin: 0;
+		    background-color: #eee;
+	    }
+
+	    p {
+		    margin-top: 1rem; 
+		    text-indent: 4rem;
+		    margin-bottom: 0;
+		}
+
+	      
+	    p.first {
+		    margin-top:0;
+		    text-indent: 0rem;
+	    }
+
+	    h4 {
+		    margin-top: 0;
+		    margin-bottom: 2rem;
+		    font-size: 2.4rem;
+		    line-height: 1.35; 
+	    }
+
+	    h4.title {
+	    	font-size: 30px;
+	    	font-weight: 800;
+	    }
+
+	    h4.author {
+	    	font-size: 23px;
+	    	font-weight: 400;
+	    	margin-top: 30px;
+	    	margin-bottom: 50px;
+	    }
+
+	    .wrapper {
+		    display:flex;
+		    background-color: #dfdfdf;
+		    width: 65rem;
+		    padding-top: 20px;
+		    padding-bottom: 20px;
+		    box-sizing: border-box;
+		    margin:auto;
+		    position: relative;
+		    border-left: 5px solid;
+		    border-left-color: #11a;
+	    }
+
+	    .column {
+			width: 50rem;
+		    margin: auto;
+	    }
+
+	    .bold {
+	    	font-weight: 600;
+	    	/*font-style: italic;*/
+	    	margin-bottom: 0px;
+	    	margin-top: 15px;
+	    }
+
+	    .afterbold {
+	    	margin-top: 5px;
+	    }
+
+/*	    .line {
+	    	position: absolute;
+	    	top: 27px;
+	    	left: 27px;
+	    	width: 3px;
+	    	height: 70px;
+	    	background-color: #22a;
+	    }*/
+
+	    .eye a {
+	    	position: absolute;
+	    	color: #000;
+	    	/*bottom: 23px;*/
+	    	top: 23px;
+	    	left: -70px;
+	    	font-size: 30px;
+	    }
+
+	    .eye a:hover {
+	    	color: pink;
+	    }
+
+	    .twitter a {
+	    	position: absolute;
+	    	color: #000;
+	    	/*bottom: 60px;*/
+	    	top: 75px;
+	    	left: -69px;
+	    	font-size: 30px;
+	    }
+
+	    .twitter a:hover {
+	    	color: #4dd2ff;
+	    }
+
+	    .insta a {
+	    	position: absolute;
+	    	color: #000;
+	    	/*bottom: 97px;*/
+	    	top: 127px;
+	    	left: -68px;
+	    	font-size: 30px;
+	    }
+
+	    .insta a:hover {
+	    	color: #8f00b3;
+	    }
+
+	    /* Larger than mobile */
+	    @media (min-width: 400px) {
+	    	.column {
+				width: 35rem;
+		   		margin: auto;
+		   		font-size: 20px;
+		   		line-height: 2.6rem;
+	  		}
+	  		.wrapper {
+			    display:flex;
+			    width: 41rem;
+			    padding-top: 20px;
+			    padding-bottom: 20px;
+			    box-sizing: border-box;
+			    margin:auto;
+	    	}
+	    }
+
+	    /* Larger than phablet (also point when grid becomes active) */
+	    @media (min-width: 550px) {
+	    	.column {
+				width: 40rem;
+		   		margin: auto;
+		   		font-size: 19px;
+		   		line-height: 2.6rem;
+	  		}
+	  		.wrapper {
+			    display:flex;
+			    width: 49rem;
+			    padding-top: 20px;
+			    padding-bottom: 20px;
+			    box-sizing: border-box;
+			    margin:auto;
+	    	}
+	  	}
+
+	    /* Larger than tablet */
+	    @media (min-width: 750px) {
+	    	.column {
+				width: 50rem;
+		   		margin: auto;
+		   		font-size: 18px;
+		   		line-height: 2.6rem;
+	  		}
+	  		.wrapper {
+			    display:flex;
+			    width: 57rem;
+			    padding-top: 20px;
+			    padding-bottom: 20px;
+			    box-sizing: border-box;
+			    margin:auto;
+	    	}
+	    }
+
+	    /* Larger than desktop */
+	    @media (min-width: 1000px) {
+	    	.column {
+				width: 58rem;
+		   		margin: auto;
+		   		font-size: 17px;
+		   		line-height: 2.6rem;
+	  		}
+	  		.wrapper {
+			    display:flex;
+			    width: 65rem;
+			    padding-top: 20px;
+			    padding-bottom: 20px;
+			    box-sizing: border-box;
+			    margin:auto;
+	    	}
+	    }
+
+	    /* Larger than Desktop HD */
+	    @media (min-width: 1200px) {
+	    	.column {
+				width: 58rem;
+		   		margin: auto;
+		   		font-size: 17px;
+		   		line-height: 2.6rem;
+	  		}
+	  		.wrapper {
+			    display:flex;
+			    width: 65rem;
+			    padding-top: 20px;
+			    padding-bottom: 20px;
+			    box-sizing: border-box;
+			    margin:auto;
+	    	}
+	    }
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="eye">
+			<a href="https://eyeondesign.aiga.org/" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
+		</div>
+		<div class="twitter">
+			<a href="https://twitter.com/AIGAeyeondesign" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		</div>
+		<div class="insta">
+			<a href="https://www.instagram.com/aigaeyeondesign/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		</div>
+	    <div class="column">
+	        <h4 class="title">
+	        	Comic Sans Might Just be the Best Font for People With Dyslexia
+	        </h4>
+	        <h4 class="author">
+	        	Angela Reiche
+	        </h4>
+	        <p class="first">
+	        	Designers are a well-meaning bunch. Over the years, we’ve listened to them tell us their plans to put an end to everything from war and poverty to poorly rendered ascenders. Type designers have also put their talents towards something we reckon they can have a more immediate impact on: reading—specifically for the 3 to 17% of the literate population that struggles with dyslexia, a neurological, often inherited, learning disorder. Dyslexia interferes with a person’s ability to read everything from nutrition information on a candy bar to novels, causing a lifetime of frustration and struggle with the written word, particularly if not diagnosed early. Affected readers have difficulty distinguishing between letterforms that are visually similar to one another, such as b/d, p/q, and 6/9, resulting in letter reversals that slow down reading and make comprehension far more difficult. So can design lend a hand?
+	        </p>
+	        <p class="bold">
+	        	What are some of the issues facing type designers trying to increase legibility and ease of reading for people with dyslexia?
+	        </p>
+	        <p class="afterbold">
+	        	Problem number one is character disambiguity—for instance, making sure that the lowercase b is not a mirror image of the d, but has its own distinctly shaped bowl and ascender of a slightly different height or terminal angle. Longer ascenders and descenders are helpful, and wide, open inner counters prevent letters from appearing to visually close up. Extra points for wider than normal letter spacing built into the alphabet, and greater variation in letter heights. Aside from these generalities, scientific studies are inconclusive and even contradictory on many points due to legibility factors independent of typeface, such as line width, type size, and leading. More research here, please.
+	        </p>
+	        <p class="bold">
+	        	How do typefaces specifically designed for people with dyslexia try to address the problems of legibility?
+	        </p>
+	        <p class="afterbold">
+	        	Sure, we could use some more studies in this area, but there’s loads of good work already being done. In 2003, Natascha Frensch, a graphic designer at London’s Royal College of Art, created Read Regular with streamlined, disambiguated characters stripped of extraneous details (a single-story a, a one-eyed g). Since then, it’s been licensed exclusively to Dutch children’s publisher Zwijsen. In 2009, Christian Boer designed a typeface called Dyslexie to decrease the likelihood of reversing letters; its letterforms are weighted heavily at the bottom to keep them visually anchored to the baseline. Abelardo Gonzalez, a New Hampshire-based mobile app designer took the same approach to a more exaggerated degree when he designed OpenDyslexic. There’s also Sylexiad, “an ongoing design investigation” begun in 2001 by Dr. Robert Hillier of Norwich University College of Arts, UK. Its letters have a handwritten appearance (something people with dyslexia often request when surveyed about typefaces) with lightweight uniform strokes.
+	        </p>
+	        <p class="bold">
+	        	What’s next? Is it worth continuing the quest for better-designed alphabets? 
+	        </p>
+	        <p class="afterbold"> 
+	        	Maybe not, sadly. Chuck Bigelow writes in Typography and Dyslexia, “Typeface design in particular has not yet been shown to provide statistically significant benefits in reading speed for dyslexics and has shown only mixed results in reading error reduction. What is missing… is scientific evidence that special dyslexia fonts are actually better for dyslexic readers than commonly used fonts.” So, despite efforts to tailor fonts for people with dyslexia, default system fonts such as Arial, Minion, and Verdana turn out to be equally legible in most cases. 
+	        </p>
+	        <p>
+	        	Bet you didn’t see this coming: From the UK-based website dyslexic.com: “Some dyslexic people find that Comic Sans is one of the more readable of the commonly-available Windows fonts, and we have used it on this web site in the past. Others find it too bold, too childish, or too informal.” We don’t accept that the best reading experience for dyslexics involves the un-ironic use of Comic Sans. But until we find a more usable alternative, might we suggest audio books? Emojis? Anyone?
+	        </p>
+		</div> <!--column-->
+	</div> <!--wrapper-->
+</body>
+</html>
